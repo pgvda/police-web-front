@@ -1,8 +1,11 @@
 import React from "react";
 import { Box, Button, Stack, TextField, Typography, FormControlLabel, Radio, RadioGroup } from "@mui/material";
 import img1 from '../../assets/login/img2.jpg';
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
+
+    const navigate = useNavigate();
     return (
         <Box
             sx={{
@@ -90,6 +93,7 @@ const LoginPage = () => {
                                 fontWeight: "bold",
                                 py: 1,
                             }}
+                            onClick={()=> navigate('dashbord')}
                         >
                             LOGIN
                         </Button>
