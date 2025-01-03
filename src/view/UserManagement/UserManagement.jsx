@@ -95,7 +95,7 @@ const UserManagement = () => {
                     fontSize: { xs: '18px', md: '20px' },
                     fontWeight: 800
                 }}>
-                    Police Officer
+                    Civil User
                 </Typography>
 
                 <Box sx={{
