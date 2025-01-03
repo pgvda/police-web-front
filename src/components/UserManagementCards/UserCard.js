@@ -2,9 +2,11 @@ import { Avatar, Box, IconButton, Typography } from "@mui/material"
 import COLORS from "../../utils/Colors";
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
+import { useNavigate } from "react-router-dom";
 
 const UserCard = ({profileImg, name, email, state, date, id}) => {
 
+    const navigate = useNavigate();
     const handleColor = (state)=> {
         if(state === 'Active') return COLORS.green1
         if(state === 'Not Active') return 'red'
@@ -44,7 +46,7 @@ const UserCard = ({profileImg, name, email, state, date, id}) => {
                 <IconButton>
                     <DeleteIcon/>
                 </IconButton>
-                <IconButton>
+                <IconButton onClick={()=>navigate(`/editAdmin/${id}`)}>
                     <EditIcon/>
                 </IconButton>
 
