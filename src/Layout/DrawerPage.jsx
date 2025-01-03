@@ -30,8 +30,8 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import PaymentsIcon from '@mui/icons-material/Payments';
 
 const drawerMenu = [
-  { name: 'Dashboard', icon: <GridViewIcon />, path: '/dashboard' },
-  { name: 'User', icon: <GroupsIcon />, path: '/students' },
+  { name: 'Dashboard', icon: <GridViewIcon />, path: '/dashbord' },
+  { name: 'User', icon: <GroupsIcon />, path: '/userManagement' },
   { name: 'Fines', icon: <RuleIcon />, path: '/marks' },
   { name: 'Payment', icon: <PaymentsIcon />, path: '/analyze' },
   { name: 'Settting', icon: <SettingsIcon />, path: '/add/student' },
